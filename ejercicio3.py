@@ -1,7 +1,7 @@
 numeros= [3,16,87,7,3,14,-68,16,7,4,25]
 
 def modificar(lista):
-    lisa= []
+    lista= []
     for numero in numeros:
         if numero in numeros:
             lista.append(numero)
@@ -9,3 +9,9 @@ def modificar(lista):
             break
     print(lista)
     print(sorted(lista, reverse=True)) #utilizamos reverse para que la lista se ordene de mayor a menor
+
+lista_temporal= []
+for numero in lista:
+    if numero%2 ==0:
+        lista_temporal.append(numero)
+        print(lista_temporal)
