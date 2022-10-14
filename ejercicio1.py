@@ -26,5 +26,9 @@ class Punto:
     def vector (self, p):
         print("El vector  entre {} y {} es ({}, {}".format(self, p, p.x - self.x, p.y - self.y))
 
+    def distancia(self, p):
+        d= math.sqrt ( (p.x - self.x)**2 + (p.y - self.y)**2 )
+        print("La distancia entre los puntos {} y {} es {}".format (self, p, d))
+
     
         
