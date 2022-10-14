@@ -18,4 +18,6 @@ def modificar(lista):
     suma_numeros= sum(lista_temporal)
     lista_temporal.insert(0, suma_numeros)
     return lista_temporal
+numeros_final= modificar(numeros)
+print(numeros_final)
 
