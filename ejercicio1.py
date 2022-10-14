@@ -30,5 +30,31 @@ class Punto:
         d= math.sqrt ( (p.x - self.x)**2 + (p.y - self.y)**2 )
         print("La distancia entre los puntos {} y {} es {}".format (self, p, d))
 
+class Rectangulo:
+    def __init__(self, inicial=Punto(), final=Punto()):
+        self.inicial = inicial
+        self.final = final
+    
+    def base(self):
+        print("La base del rectangulo es {}".format(self.vBase))
+    
+    def altura(self):
+        print("La altura del rectangulo es {}".format(self.vAltura))
+    
+    def area(self):
+        print("El area del rectangulo es {}".format(self.vArea))
+    
+class Rectangulo:
+    def __init__(self, inicial=Punto(), final=Punto()):
+        self.inicial = inicial
+        self.final = final
+
+        self.vBase= abs(self.final.x - self.inicial.x)
+        self.vAltura= abs(self.final.y - self.inicial.y)
+        self.vArea= self.vBase * self.vAltura
+
+
+
+
     
         
